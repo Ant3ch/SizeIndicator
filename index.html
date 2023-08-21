@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Size Indicator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div id="A" class="bonhomme" style='--img-url:url("./assets/manstickman.png");'>
+        <p class="size-text">1.78 m</p>
+        <form class="size-changer">
+            <input min="1" step="0.01" max="200" class="size-input" type="number" placeholder="Size">
+
+            <select class="size-select">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+        </form>
+        <input class="size-range" type="range" min="0" max="200" value="178"  >
+
+    </div>
+    <div id="B" class="bonhomme">
+        <p class="size-text">1.78 m</p>
+        <form class="size-changer">
+            <input max="200" class="size-input" type="number" placeholder="Size">
+
+            <select class="size-select">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+        </form>
+        <input class="size-range" type="range" min="1" max="200" value="178">
+    </div>
+    <div class="scale-container">
+        <p class="scale-indicator"></p>
+        <input min="1" step="1" value="10" max="999" class="size-input scale-input" type="number" placeholder="Scale">
+
+    </div>
+</div>
+<script rel="script" type="text/javascript" src="script.js"></script>
+</body>
+</html>

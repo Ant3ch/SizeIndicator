@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap:1.7rem;
+    position: absolute;
+    bottom: 0;
+    background:url('./assets/background.png');
+
+}
+.bonhomme{
+    --img-url:url("./assets/womanstickman.png");
+    margin-bottom: 8rem;
+    width: 224px;
+    height: 673px;
+    background-color: red;
+    background: var(--img-url);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.size-changer{
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.size-input{
+    color:white;
+    width: 4rem;
+    background:transparent;
+    border:1px solid #ffffff;
+    padding:3px;
+}
+.size-range {
+position: absolute;
+bottom: -3.5rem;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.scale-container{
+    position:fixed;
+    bottom:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left:0.5rem;
+}
+
+.scale-indicator{
+    font-size: 2.5rem;
+    color:white;
+
+}
+.scale-input{
+    font-size: 2rem;
+
+    width: 50%;
+    background:transparent;
+    border:2px solid #ffffff;
+    padding:3px;
+}
+
+.size-text{
+    color: white;
+    font-size: 4rem;
+    white-space: nowrap;
+
+}
